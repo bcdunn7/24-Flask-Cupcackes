@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupcakes!</title>
+</head>
+<body>
+
+    <ul id="cupcakes-list">
+
+    </ul>
+
+    <form id="new-cupcake-form" action="/api/cupcakes" method="POST">
+        <input id="form-flavor" name="falvor" type="text" placeholder="falvor">
+        <input id="form-size" name="size" type="text" placeholder="size">
+        <input id="form-rating" name="rating" type="text" placeholder="rating">
+        <input id="form-image" name="image" type="text" placeholder="image">
+        <button>Create!</button>
+    </form>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"
+    integrity="sha256-T/f7Sju1ZfNNfBh7skWn0idlCBcI3RwdLSS4/I7NQKQ=" crossorigin="anonymous"></script>
+    <script src="/static/cupcakes.js"></script>
+</body>
+</html>
